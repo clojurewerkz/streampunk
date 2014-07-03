@@ -1,0 +1,9 @@
+pom.xml
+*jar
+/lib/
+/classes/
+.lein-*
+docs/*
+target/*
+.nrepl*
+
