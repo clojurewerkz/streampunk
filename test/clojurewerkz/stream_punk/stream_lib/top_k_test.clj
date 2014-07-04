@@ -1,6 +1,6 @@
-(ns clojurewerkz.stream-punk.top-k-test
+(ns clojurewerkz.stream-punk.stream-lib.top-k-test
   (:require [clojure.test :refer :all]
-            [clojurewerkz.stream-punk.top-k :as topk]))
+            [clojurewerkz.stream-punk.stream-lib.top-k :as topk]))
 
 (deftest test-top-k-with-stream-summary
   (let [tk (topk/stream-summary 3)]

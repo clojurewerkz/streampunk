@@ -1,4 +1,5 @@
-(ns clojurewerkz.stream-punk.top-k
+(ns clojurewerkz.stream-punk.stream-lib.top-k
+  "TopK algorithms from stream-lib"
   (:import  [com.clearspring.analytics.stream ITopK StochasticTopper StreamSummary Counter]))
 
 ;;
