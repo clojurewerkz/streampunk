@@ -1,7 +1,7 @@
 # Stream Punk
 
-Stream Punk is a Clojure interface to [stream-lib](https://github.com/addthis/stream-lib),
-stream summarizer and cardinality estimator.
+Stream Punk is a Clojure interface to stream summarization and
+cardinality estimation libraries, such as [stream-lib](https://github.com/addthis/stream-lib).
 
 
 ## Project Goals
