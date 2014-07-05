@@ -1,8 +1,5 @@
-(ns clojurewerkz.stream-punk.stream-lib.quantile-estimation
+(ns clojurewerkz.stream-punk.stream-lib.q-digest
   (:import [com.clearspring.analytics.stream.quantile IQuantileEstimator QDigest]))
-
-
-
 
 ;;
 ;; API
