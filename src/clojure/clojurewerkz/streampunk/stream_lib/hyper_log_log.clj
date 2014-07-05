@@ -1,6 +1,7 @@
 (ns clojurewerkz.streampunk.stream-lib.hyper-log-log
   "Interface to stream-lib's HyperLogLog implementation"
-  (:import [com.clearspring.analytics.stream.cardinality ICardinality HyperLogLog]))
+  (:import [com.clearspring.analytics.stream.cardinality ICardinality HyperLogLog
+            HyperLogLogPlus]))
 
 ;;
 ;; API
@@ -21,11 +22,19 @@
   [n]
   (HyperLogLog. (Integer/valueOf n)))
 
+(defn ^ICardinality hll-plus
+  "Creates a new HyperLogLogPlug instance using the specified
+   precision parameters."
+  ([p]
+     (HyperLogLogPlus. p))
+  ([p sp]
+     (HyperLogLogPlus. p sp)))
+
 (defn offer
-  [^HyperLogLog algo obj]
+  [^ICardinality algo obj]
   (.offer algo obj))
 
 (defn ^long cardinality
   "Returns estimated cardinality"
-  [^HyperLogLog algo]
+  [^ICardinality algo]
   (.cardinality algo))

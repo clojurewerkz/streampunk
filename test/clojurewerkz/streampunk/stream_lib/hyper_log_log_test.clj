@@ -37,3 +37,25 @@
         (hll/offer hl x))
       (let [c (hll/cardinality hl)]
         (ensure-error-below c n 0.01)))))
+
+(deftest test-cardinality-with-hll-plus
+  (let [hl (hll/hll-plus 16)]
+    (doseq [x [0 1 2 3 16 17 18 19 19]]
+      (hll/offer hl x))
+    (is (= 8 (hll/cardinality hl)))))
+
+(deftest test-high-cardinality-with-hll-plus
+  (testing "with log2m = 10"
+    (let [n  10000000
+          hl (hll/hll-plus 10)]
+      (doseq [x (range 0 n)]
+        (hll/offer hl x))
+      (let [c (hll/cardinality hl)]
+        (ensure-error-below c n 0.1))))
+  (testing "with log2m = 20"
+    (let [n  10000000
+          hl (hll/hll-plus 20 30)]
+      (doseq [x (range 0 n)]
+        (hll/offer hl x))
+      (let [c (hll/cardinality hl)]
+        (ensure-error-below c n 0.01)))))
