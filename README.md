@@ -1,23 +1,23 @@
-# Stream Punk
+# Streampunk
 
-Stream Punk is a Clojure interface to stream summarization and
+Streampunk is a Clojure interface to stream summarization and
 cardinality estimation libraries, such as [stream-lib](https://github.com/addthis/stream-lib).
 
 
 ## Project Goals
 
- * Provide a nice Clojure interface to all stream-lib features
+ * Provide a nice Clojure interface to stream-lib and similar libraries
  * Be well tested
 
 
 ## Project Maturity
 
-Stream Punk is *very* young.
+Streampunk is *very* young.
 
 
 ## Artifacts
 
-Stream Punk artifacts are [released to Clojars](https://clojars.org/clojurewerkz/stream-punk). If you are using Maven, add the following repository
+Streampunk artifacts are [released to Clojars](https://clojars.org/clojurewerkz/streampunk). If you are using Maven, add the following repository
 definition to your `pom.xml`:
 
 ``` xml
@@ -31,14 +31,14 @@ definition to your `pom.xml`:
 
 With Leiningen:
 
-    [clojurewerkz/stream-punk "1.0.0-alpha1"]
+    [clojurewerkz/streampunk "1.0.0-alpha1"]
 
 
 With Maven:
 
     <dependency>
       <groupId>clojurewerkz</groupId>
-      <artifactId>stream-punk</artifactId>
+      <artifactId>streampunk</artifactId>
       <version>1.0.0-alpha1</version>
     </dependency>
 
@@ -58,17 +58,17 @@ Twitter.
 
 ## Supported Clojure versions
 
-Stream Punk is built from the ground up for Clojure 1.6.0 and up.
+Streampunk requires Clojure 1.4+.
 
 
 ## Continuous Integration Status
 
-[![Continuous Integration status](https://secure.travis-ci.org/clojurewerkz/stream-punk.png)](http://travis-ci.org/clojurewerkz/stream-punk)
+[![Continuous Integration status](https://secure.travis-ci.org/clojurewerkz/streampunk.png)](http://travis-ci.org/clojurewerkz/streampunk)
 
 
-## Stream Punk Is a ClojureWerkz Project
+## Streampunk Is a ClojureWerkz Project
 
-stream-punk is part of the [group of Clojure libraries known as ClojureWerkz](http://clojurewerkz.org), together with
+Streampunk is part of the [group of Clojure libraries known as ClojureWerkz](http://clojurewerkz.org), together with
 
  * [Monger](http://clojuremongodb.info)
  * [Langohr](http://clojurerabbitmq.info)
@@ -83,16 +83,19 @@ and several others.
 
 ## Development
 
-stream-punk uses [Leiningen
-2](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md). Make
+Streampunk uses [Leiningen 2](https://github.com/technomancy/leiningen/blob/master/doc/TUTORIAL.md). Make
 sure you have it installed and then run tests against supported
 Clojure versions using
 
-    lein2 all test
+    lein all test
 
 Then create a branch and make your changes on it. Once you are done
 with your changes and all tests pass, submit a pull request on GitHub.
 
+
+## Credits
+
+The work on this library is sponsored by [Open Sensors](http://opensensors.io).
 
 
 ## License
