@@ -1,19 +1,19 @@
 (ns clojurewerkz.streampunk.stream-lib.hyper-log-log
   "Interface to stream-lib's HyperLogLog implementation"
-  (:import [com.clearspring.analytics.stream.cardinality HyperLogLog]))
+  (:import [com.clearspring.analytics.stream.cardinality ICardinality HyperLogLog]))
 
 ;;
 ;; API
 ;;
 
-(defn ^HyperLogLog with-rsd
+(defn ^ICardinality with-rsd
   "Create a new HyperLogLog instance using the specified standard deviation.
 
    Smaller values require more space."
   [^double rsd]
   (HyperLogLog. rsd))
 
-(defn ^HyperLogLog with-log2m
+(defn ^ICardinality with-log2m
   "Create a new HyperLogLog instance using the specified log2m paramters.
 
    The log2m parameter defines the accuracy of
