@@ -1,4 +1,4 @@
-(ns clojurewerkz.stream-punk.stream-lib.q-digest
+(ns clojurewerkz.streampunk.stream-lib.q-digest
   (:import [com.clearspring.analytics.stream.quantile IQuantileEstimator QDigest]))
 
 ;;

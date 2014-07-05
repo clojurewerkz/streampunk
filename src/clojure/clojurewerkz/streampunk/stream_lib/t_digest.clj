@@ -1,4 +1,4 @@
-(ns clojurewerkz.stream-punk.stream-lib.t-digest
+(ns clojurewerkz.streampunk.stream-lib.t-digest
   (:import [com.clearspring.analytics.stream.quantile TDigest]))
 
 ;;

@@ -1,6 +1,6 @@
-(ns clojurewerkz.stream-punk.stream-lib.t-digest-test
+(ns clojurewerkz.streampunk.stream-lib.t-digest-test
   (:require [clojure.test :refer :all]
-            [clojurewerkz.stream-punk.stream-lib.t-digest :as qe]))
+            [clojurewerkz.streampunk.stream-lib.t-digest :as qe]))
 
 (deftest test-basic-quantile-calculation-with-t-digest
   (let [t (qe/t-digest 100)]
