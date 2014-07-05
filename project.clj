@@ -1,4 +1,4 @@
-(defproject clojurewerkz/stream-punk "1.0.0-beta1"
+(defproject clojurewerkz/stream-punk "1.0.0-beta2-SNAPSHOT"
   :description "Clojure interface to stream-lib, stream summarizer and cardinality estimator"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [com.clearspring.analytics/stream "2.7.0"]]
