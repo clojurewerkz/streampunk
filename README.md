@@ -31,14 +31,14 @@ definition to your `pom.xml`:
 
 With Leiningen:
 
-    [clojurewerkz/streampunk "1.0.0-beta1"]
+    [clojurewerkz/stream-punk "1.0.0-beta1"]
 
 
 With Maven:
 
     <dependency>
       <groupId>clojurewerkz</groupId>
-      <artifactId>streampunk</artifactId>
+      <artifactId>stream-punk</artifactId>
       <version>1.0.0-beta1</version>
     </dependency>
 
