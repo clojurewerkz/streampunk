@@ -13,6 +13,6 @@
   [^IQuantileEstimator algo ^long val]
   (.offer algo val))
 
-(defn ^long get-quantile
-  [^IQuantileEstimator algo ^double q]
+(defn get-quantile
+  ^long [^IQuantileEstimator algo ^double q]
   (.getQuantile algo q))
